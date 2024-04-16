@@ -13,7 +13,7 @@ const HomeCards = () => {
               Browse our Workout Routines and start today!
             </p>
             <Link
-              to='/jobs'
+              to='/workouts'
               className='inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700'
             >
               Browse Workouts
