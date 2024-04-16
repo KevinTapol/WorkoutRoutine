@@ -7,8 +7,9 @@
 - npm create vite@latest .
 - npm i 
 
-## Setup Backend Server Port
-We are using json-server as our backend with a frontend json file acting as our backend.
+## Setup Frontend Server Port
+- npm i -D json-server
+We are designating the specific frontend url to 3000.
 *In the vite.config.js add the following:*
 
 
@@ -24,7 +25,43 @@ export default defineConfig({
   server: {  
     port: 3000,  
   }  
+})
+
+## Setup Backend Server Proxy
+We are using json-server as our backend with a frontend json file acting as our backend.
+*In the vite.config.js add the following:*
+
+
+***Before***  
+export default defineConfig({  
+  plugins: [react()],  
 })  
+
+***After***  
+Is changed to  
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    // frontend url
+    port: 3000,
+    // backend url
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
+  },
+});
+  
+
+  
 
 ## Install Tailwind
 - npm install -D tailwindcss postcss autoprefixer
@@ -93,3 +130,4 @@ pages
 
 ## Install React Icons
 - npm i react-icons
+

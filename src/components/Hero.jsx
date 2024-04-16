@@ -1,7 +1,7 @@
 // title and subtitle have default props being set in as 'Become a React Dev' and 'Find the React job that fits your skill set' Also, they can be overwritten if props.title or props.subtitle is being reassigned.
 const Hero = ({
-    title = '💪Get Buff Bruh💪',
-    subtitle = 'Find the React job that fits your skill set',
+    title = '💪Become a Gym Rat💪',
+    subtitle = 'Find the Workout that fits your routine',
   }) => {
     return (
       <section className='bg-indigo-700 py-20 mb-4'>
