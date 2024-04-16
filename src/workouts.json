@@ -1,141 +1,148 @@
 {
-    "workouts": [
-      {
-        "id": "1",
-        "day": "Push",
-        "muscleGroup": "Chest",
-        "exerciseName": "Flat Press",
-        "imgUrl": "/images/BenchPress.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      {
-        "id": "2",
-        "day": "Push",
-        "muscleGroup": "Chest",
-        "exerciseName": "Incline Press",
-        "imgUrl": "/images/BenchPress.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      {
-        "id": "3",
-        "day": "Push",
-        "muscleGroup": "Chest",
-        "exerciseName": "Cable Cross-Overs",
-        "imgUrl": "/images/CableCrossOvers.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      
-      {
-        "id": "4",
-        "day": "Push",
-        "muscleGroup": "Tricep",
-        "exerciseName": "PullDowns",
-        "imgUrl": "/images/TricepPullDowns.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      {
-        "id": "5",
-        "day": "Push",
-        "muscleGroup": "Tricep",
-        "exerciseName": "Tricep Cables",
-        "imgUrl": "/images/TricepCables.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      {
-        "id": "6",
-        "day": "Push",
-        "muscleGroup": "Tricep",
-        "exerciseName": "Overhead Push",
-        "imgUrl": "/images/OverheadPush.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      {
-        "id": "7",
-        "day": "Pull",
-        "muscleGroup": "Back",
-        "exerciseName": "UpperBack",
-        "imgUrl": "/images/UpperBack.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      {
-        "id": "8",
-        "day": "Pull",
-        "muscleGroup": "Back",
-        "exerciseName": "MidBack",
-        "imgUrl": "/images/MidBack.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      {
-        "id": "9",
-        "day": "Pull",
-        "muscleGroup": "Bicep",
-        "exerciseName": "Bicep Cables",
-        "imgUrl": "/images/BicepCables.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      {
-        "id": "10",
-        "day": "Pull",
-        "muscleGroup": "Bicep",
-        "exerciseName": "Bicep Rope",
-        "imgUrl": "/images/BicepRope.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      {
-        "id": "11",
-        "day": "Pull",
-        "muscleGroup": "Bicep",
-        "exerciseName": "Bar Curl",
-        "imgUrl": "/images/BarCurl.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      {
-        "id": "12",
-        "day": "Leg",
-        "muscleGroup": "Back Thigh",
-        "exerciseName": "Back Thigh",
-        "imgUrl": "/images/BackThigh.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      {
-        "id": "13",
-        "day": "Leg",
-        "muscleGroup": "Front Thigh",
-        "exerciseName": "Front Thigh",
-        "imgUrl": "/images/FrontThigh.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      {
-        "id": "14",
-        "day": "Leg",
-        "muscleGroup": "Inner Thigh",
-        "exerciseName": "Inner Thigh",
-        "imgUrl": "/images/InnerThigh.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      {
-        "id": "15",
-        "day": "Leg",
-        "muscleGroup": "Outer Thigh",
-        "exerciseName": "Outer Thigh",
-        "imgUrl": "/images/OuterThigh.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      {
-        "id": "16",
-        "day": "Leg",
-        "muscleGroup": "Back Thigh",
-        "exerciseName": "Back Thigh",
-        "imgUrl": "/images/BackThigh.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      },
-      {
-        "id": "17",
-        "day": "Leg",
-        "muscleGroup": "Buns",
-        "exerciseName": "Buns",
-        "imgUrl": "/images/Buns.jpg",
-        "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
-      }
-    ]
-  }
+  "workouts": [
+    {
+      "id": "1",
+      "day": "Push",
+      "muscleGroup": "Chest",
+      "exerciseName": "Flat Press",
+      "imgUrl": "/images/BenchPress.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "2",
+      "day": "Push",
+      "muscleGroup": "Chest",
+      "exerciseName": "Incline Press",
+      "imgUrl": "/images/BenchPress.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "3",
+      "day": "Push",
+      "muscleGroup": "Chest",
+      "exerciseName": "Cable Cross-Overs",
+      "imgUrl": "/images/CableCrossOvers.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "4",
+      "day": "Push",
+      "muscleGroup": "Tricep",
+      "exerciseName": "PullDowns",
+      "imgUrl": "/images/TricepPullDowns.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "5",
+      "day": "Push",
+      "muscleGroup": "Tricep",
+      "exerciseName": "Tricep Cables",
+      "imgUrl": "/images/TricepCables.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "6",
+      "day": "Push",
+      "muscleGroup": "Tricep",
+      "exerciseName": "Overhead Push",
+      "imgUrl": "/images/OverheadPush.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "7",
+      "day": "Pull",
+      "muscleGroup": "Back",
+      "exerciseName": "UpperBack",
+      "imgUrl": "/images/UpperBack.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "8",
+      "day": "Pull",
+      "muscleGroup": "Back",
+      "exerciseName": "MidBack",
+      "imgUrl": "/images/MidBack.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "9",
+      "day": "Pull",
+      "muscleGroup": "Bicep",
+      "exerciseName": "Bicep Cables",
+      "imgUrl": "/images/BicepCables.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "10",
+      "day": "Pull",
+      "muscleGroup": "Bicep",
+      "exerciseName": "Bicep Rope",
+      "imgUrl": "/images/BicepRope.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "11",
+      "day": "Pull",
+      "muscleGroup": "Bicep",
+      "exerciseName": "Bar Curl",
+      "imgUrl": "/images/BarCurl.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "12",
+      "day": "Leg",
+      "muscleGroup": "Back Thigh",
+      "exerciseName": "Back Thigh",
+      "imgUrl": "/images/BackThigh.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "13",
+      "day": "Leg",
+      "muscleGroup": "Front Thigh",
+      "exerciseName": "Front Thigh",
+      "imgUrl": "/images/FrontThigh.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "14",
+      "day": "Leg",
+      "muscleGroup": "Inner Thigh",
+      "exerciseName": "Inner Thigh",
+      "imgUrl": "/images/InnerThigh.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "15",
+      "day": "Leg",
+      "muscleGroup": "Outer Thigh",
+      "exerciseName": "Outer Thigh",
+      "imgUrl": "/images/OuterThigh.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "16",
+      "day": "Leg",
+      "muscleGroup": "Back Thigh",
+      "exerciseName": "Back Thigh",
+      "imgUrl": "/images/BackThigh.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "17",
+      "day": "Leg",
+      "muscleGroup": "Buns",
+      "exerciseName": "Buns",
+      "imgUrl": "/images/Buns.jpg",
+      "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "eb3d",
+      "day": "Other",
+      "muscleGroup": "Chest",
+      "exerciseName": "Nipples",
+      "imgUrl": "https/placebacon.net/250/250",
+      "routine": "purple nurple"
+    }
+  ]
+}
