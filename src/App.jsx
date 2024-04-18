@@ -7,7 +7,7 @@ import AddWorkoutPage from './pages/AddWorkoutPage'
 import EditWorkoutPage from './pages/EditWorkoutPage'
 import WorkoutsPage from './pages/WorkoutsPage'
 import WorkoutPage from './pages/NotFoundPage'
-import {addWorkout} from './components/BackendRequests'
+import {addWorkout, updateWorkout} from './components/BackendRequests'
 
 const App = () => {
   const router = createBrowserRouter(
@@ -16,7 +16,7 @@ const App = () => {
         <Route index element={ <Homepage /> } />
         <Route path='/workouts' element={ <WorkoutsPage /> } />
         <Route path='/addWorkout' element={ <AddWorkoutPage addWorkoutSubmit={addWorkout} /> } />
-        <Route path='/editWorkout' element={ <EditWorkoutPage /> } />
+        <Route path='/editWorkout' element={ <EditWorkoutPage updateWorkoutSubmit={updateWorkout}/> } />
         <Route path='/workouts/:id' element={ <WorkoutPage /> } />
         <Route path='*' element={ <NotFoundPage /> } />
       </Route>
