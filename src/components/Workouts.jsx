@@ -30,7 +30,10 @@ const Workouts = ({ isHome = false }) => {
         </h2>
 
         {loading ? (
-          <Spinner />
+          <div className='flex justify-center items-center'>
+            <Spinner />
+          </div> 
+          
         ) : (
           <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
             {workouts.map((workout) => (
