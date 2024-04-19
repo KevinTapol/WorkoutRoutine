@@ -2,6 +2,7 @@ import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
 import { FaArrowLeft, FaMapMarker } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+
 const workoutLoader = async ({ params }) => {
   const res = await fetch(`/api/workouts/${params.id}`);
   const data = await res.json();
@@ -39,7 +40,7 @@ const WorkoutPage = ({ deleteWorkout }) => {
 
     if (!confirm) return;
     deleteWorkout(workoutId);
-    toast.success('Workout deleted successfully');
+    // toast.success('Workout deleted successfully');
     navigate('/workouts');
   };
 
