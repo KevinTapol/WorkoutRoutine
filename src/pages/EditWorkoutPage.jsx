@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 
 const EditWorkoutPage = ({ updateWorkoutSubmit }) => {
   // useLoaderData() is used to access the data (similar to useEffect()) from jobLoader which is exported from JobPage.jsx, imported from App.jsx and passed in as a prop to the prop loader in the Route component for the edit-job route.
@@ -30,12 +30,13 @@ const EditWorkoutPage = ({ updateWorkoutSubmit }) => {
 
     updateWorkoutSubmit(updatedWorkout);
 
-    toast.success('Workout Updated Successfully');
+    // toast.success('Workout Updated Successfully');
 
     return navigate(`/workouts/${id}`);
   };
 
-  return (<section className='bg-indigo-50'>
+  return (
+  <section className='bg-indigo-50'>
   <div className='container m-auto max-w-2xl py-24'>
     <div className='bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0'>
       <form onSubmit={submitForm}>
@@ -119,7 +120,7 @@ const EditWorkoutPage = ({ updateWorkoutSubmit }) => {
             className='bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline'
             type='submit'
           >
-            Add Job
+            Update Workout
           </button>
         </div>
 

@@ -16,7 +16,7 @@ const App = () => {
         <Route index element={ <Homepage /> } />
         <Route path='/workouts' element={ <WorkoutsPage /> } />
         <Route path='/addWorkout' element={ <AddWorkoutPage addWorkoutSubmit={addWorkout} /> } />
-        <Route path='/editWorkout' element={ <EditWorkoutPage updateWorkoutSubmit={updateWorkout}/> } loader={workoutLoader}/>
+        <Route path='/editWorkout/:id' element={ <EditWorkoutPage updateWorkoutSubmit={updateWorkout}/> } loader={workoutLoader}/>
         <Route path='/workouts/:id' element={ <WorkoutPage deleteWorkout={deleteWorkout} /> } loader={workoutLoader} />
         <Route path='*' element={ <NotFoundPage /> } />
       </Route>
