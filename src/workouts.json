@@ -135,6 +135,14 @@
       "exerciseName": "Buns",
       "imgUrl": "/images/Buns.jpg",
       "routine": "1 set of 12 reps, 1 set of 10 reps and 1 set of 8 reps at max then back to min weight and continue reps till form failure"
+    },
+    {
+      "id": "1bf9",
+      "day": "Other",
+      "muscleGroup": "fingers",
+      "exerciseName": "typing",
+      "imgUrl": "https/placebacon.net/250/250",
+      "routine": "build stuff and things "
     }
   ]
 }

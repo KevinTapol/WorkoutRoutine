@@ -29,6 +29,9 @@ const Navbar = () => {
                 <NavLink to='/addWorkout' className={linkClass}>
                   Add Workout
                 </NavLink>
+                <NavLink to='/test' className={linkClass}>
+                  Test
+                </NavLink>
               </div>
             </div>
           </div>
