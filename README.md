@@ -131,3 +131,7 @@ pages
 ## Install React Icons
 - npm i react-icons
 
+
+added default image to aside instead of company name input fields 4/22
+next thingy
+addworkoutpage successfully loads image but editworkoutpage does not

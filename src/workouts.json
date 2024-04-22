@@ -141,8 +141,24 @@
       "day": "Other",
       "muscleGroup": "fingers",
       "exerciseName": "typing",
-      "imgUrl": "https/placebacon.net/250/250",
+      "imgUrl": "https://placebacon.net/350/350",
       "routine": "build stuff and things "
+    },
+    {
+      "id": "08c6",
+      "day": "Other",
+      "muscleGroup": "Brain",
+      "exerciseName": "Building a website",
+      "imgUrl": "https://placebacon.net450/450",
+      "routine": "adding a new workout routine to check for image sizes, add workout fields where I changed the default use state to empty strings allowing the placeholders to be seen with run on sentence and stuff and things"
+    },
+    {
+      "id": "c478",
+      "day": "Other",
+      "muscleGroup": "distal flanages",
+      "exerciseName": "knuckle crack",
+      "imgUrl": "https://placebacon.net/450/450",
+      "routine": "checking to see if add workout adds the image url string and dislpays it and stuff"
     }
   ]
 }

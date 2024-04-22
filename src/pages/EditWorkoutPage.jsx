@@ -95,6 +95,23 @@ const EditWorkoutPage = ({ updateWorkoutSubmit }) => {
             onChange={(e) => setExerciseName(e.target.value)}
           />
         </div>
+
+{/* Exercise Image */}
+        <div className='mb-4'>
+              <label className='block text-gray-700 font-bold mb-2'>
+                Exercise Image URL
+              </label>
+              <input
+                type='text'
+                id='imgUrl'
+                name='imgUrl'
+                className='border rounded w-full py-2 px-3 mb-2'
+                placeholder='https://placebacon.net/200/200'
+                required
+                value={imgUrl}
+                onChange={(e) => setImgUrl(e.target.value)}
+              />
+            </div>
 {/* Routine text area */}
         <div className='mb-4'>
           <label

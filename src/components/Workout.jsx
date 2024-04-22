@@ -13,9 +13,13 @@ const Workout = ({ workout }) => {
   return (
     <div className='bg-white rounded-xl shadow-md relative'>
       <div className='p-4'>
-        <div className='mb-6'>
+        <div className='flex flex-row justify-between'>
           <div className='text-gray-600 my-2'>{workout.muscleGroup}</div>
           <h3 className='text-xl font-bold'>{workout.exerciseName}</h3>
+          <div>
+            {/* messing with imgUrl */}
+            <img className='max-w-[50px]' src={workout.imgUrl} alt="" />
+          </div>
         </div>
         {/* passing in the description variable based on boolean useState hook instead of the workouts.description */}
         <div className='mb-5'>{routine}</div>

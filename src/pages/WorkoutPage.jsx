@@ -89,26 +89,7 @@ const WorkoutPage = ({ deleteWorkout }) => {
             {/* <!-- Sidebar --> */}
             <aside>
               <div className='bg-white p-6 rounded-lg shadow-md'>
-                <h3 className='text-xl font-bold mb-6'>Company Info</h3>
-
-                <h2 className='text-2xl'>{workout.day}</h2>
-
-                <p className='my-2'>{workout.day}</p>
-
-                <hr className='my-4' />
-
-                <h3 className='text-xl'>Contact Email:</h3>
-
-                <p className='my-2 bg-indigo-100 p-2 font-bold'>
-                  {workout.day}
-                </p>
-
-                <h3 className='text-xl'>Contact Phone:</h3>
-
-                <p className='my-2 bg-indigo-100 p-2 font-bold'>
-                  {' '}
-                  {workout.day}
-                </p>
+                <img src={workout.imgUrl} alt="" />
               </div>
 
               <div className='bg-white p-6 rounded-lg shadow-md mt-6'>

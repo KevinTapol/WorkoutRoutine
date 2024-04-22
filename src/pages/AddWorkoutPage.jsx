@@ -4,9 +4,9 @@ import { toast } from 'react-toastify';
 
 const AddWorkoutPage = ({ addWorkoutSubmit }) => {
   const [day, setDay] = useState('Push Day');
-  const [muscleGroup, setMuscleGroup] = useState('Chest');
-  const [exerciseName, setExerciseName] = useState('Flat Bench Press');
-  const [imgUrl, setImgUrl] = useState('https/placebacon.net/250/250');
+  const [muscleGroup, setMuscleGroup] = useState('');
+  const [exerciseName, setExerciseName] = useState('');
+  const [imgUrl, setImgUrl] = useState('');
   const [routine, setRoutine] = useState('');
 
   const navigate = useNavigate();
@@ -67,7 +67,7 @@ const AddWorkoutPage = ({ addWorkoutSubmit }) => {
                 id='muscleGroup'
                 name='muscleGroup'
                 className='border rounded w-full py-2 px-3 mb-2'
-                placeholder='Exercise Name'
+                placeholder='Muscle Group'
                 required
                 value={muscleGroup}
                 onChange={(e) => setMuscleGroup(e.target.value)}
@@ -87,6 +87,22 @@ const AddWorkoutPage = ({ addWorkoutSubmit }) => {
                 required
                 value={exerciseName}
                 onChange={(e) => setExerciseName(e.target.value)}
+              />
+            </div>
+{/* Exercise Image */}
+            <div className='mb-4'>
+              <label className='block text-gray-700 font-bold mb-2'>
+                Exercise Image URL
+              </label>
+              <input
+                type='text'
+                id='imgUrl'
+                name='imgUrl'
+                className='border rounded w-full py-2 px-3 mb-2'
+                placeholder='https://placebacon.net/200/200'
+                required
+                value={imgUrl}
+                onChange={(e) => setImgUrl(e.target.value)}
               />
             </div>
 {/* Routine text area */}
