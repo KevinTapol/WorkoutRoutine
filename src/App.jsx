@@ -9,6 +9,7 @@ import WorkoutsPage from './pages/WorkoutsPage'
 import WorkoutPage, { workoutLoader } from './pages/WorkoutPage'
 import {addWorkout, updateWorkout, deleteWorkout} from './components/BackendRequests'
 import TestComponent from './components/TestComponent'
+import TestPage from './pages/TestPage'
 
 const App = () => {
   const router = createBrowserRouter(
@@ -19,7 +20,7 @@ const App = () => {
         <Route path='/addWorkout' element={ <AddWorkoutPage addWorkoutSubmit={addWorkout} /> } />
         <Route path='/editWorkout/:id' element={ <EditWorkoutPage updateWorkoutSubmit={updateWorkout}/> } loader={workoutLoader}/>
         <Route path='/workouts/:id' element={ <WorkoutPage deleteWorkout={deleteWorkout} /> } loader={workoutLoader} />
-        <Route path='/test' element={ <TestComponent  /> }  />
+        <Route path='/test' element={ <TestPage  /> }  />
         <Route path='*' element={ <NotFoundPage /> } />
       </Route>
     )
