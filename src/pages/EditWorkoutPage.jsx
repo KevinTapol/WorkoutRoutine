@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
-// import { toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 const EditWorkoutPage = ({ updateWorkoutSubmit }) => {
   // useLoaderData() is used to access the data (similar to useEffect()) from jobLoader which is exported from JobPage.jsx, imported from App.jsx and passed in as a prop to the prop loader in the Route component for the edit-job route.
@@ -30,7 +30,7 @@ const EditWorkoutPage = ({ updateWorkoutSubmit }) => {
 
     updateWorkoutSubmit(updatedWorkout);
 
-    // toast.success('Workout Updated Successfully');
+    toast.success('Workout Updated Successfully');
 
     return navigate(`/workouts/${id}`);
   };

@@ -37,7 +37,7 @@ const TestComponent = ({ isTestPage=true }) => {
     <>
       <div className='flex flex-col items-center justify-center'>
         <h1 className='text-xl'>Bacon Loading...</h1>
-        <Spinner style={{}}/>
+        <Spinner />
         <span>This is a test page for random components, routing and other stuff.</span>
       </div>
 

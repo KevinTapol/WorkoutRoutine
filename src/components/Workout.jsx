@@ -18,7 +18,8 @@ const Workout = ({ workout }) => {
           <h3 className='text-xl font-bold'>{workout.exerciseName}</h3>
           <div>
             {/* messing with imgUrl */}
-            <img className='max-w-[50px]' src={workout.imgUrl} alt="" />
+            {/* if a src was a fetch request consider cloudinary */}
+            <img className='w-[50px] h-[50px]' src={workout.imgUrl} alt="" />
           </div>
         </div>
         {/* passing in the description variable based on boolean useState hook instead of the workouts.description */}

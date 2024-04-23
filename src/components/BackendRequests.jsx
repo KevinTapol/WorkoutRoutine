@@ -1,4 +1,5 @@
 import React from 'react'
+import { toast } from 'react-toastify'
 
 const addWorkout = async (newWorkout) => {
     const res = await fetch('/api/workouts', {
@@ -7,7 +8,9 @@ const addWorkout = async (newWorkout) => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(newWorkout)
+      
     })
+    toast.success('Job Added Successfully');
     // When we return from this function we get the redirect from AddJobPage.jsx form function onSubmit called submitForm.
     return
   }

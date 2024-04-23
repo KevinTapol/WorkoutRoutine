@@ -1,6 +1,7 @@
 import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
 import { FaArrowLeft, FaMapMarker } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 
 const workoutLoader = async ({ params }) => {
@@ -40,7 +41,7 @@ const WorkoutPage = ({ deleteWorkout }) => {
 
     if (!confirm) return;
     deleteWorkout(workoutId);
-    // toast.success('Workout deleted successfully');
+    toast.success('Workout deleted successfully');
     navigate('/workouts');
   };
 
@@ -89,7 +90,8 @@ const WorkoutPage = ({ deleteWorkout }) => {
             {/* <!-- Sidebar --> */}
             <aside>
               <div className='bg-white p-6 rounded-lg shadow-md'>
-                <img src={workout.imgUrl} alt="" />
+                {/* center an image with display block auto the margin on the x axis */}
+                <img src={workout.imgUrl} className='block mx-auto' alt="" />
               </div>
 
               <div className='bg-white p-6 rounded-lg shadow-md mt-6'>

@@ -147,9 +147,9 @@
     {
       "id": "08c6",
       "day": "Other",
-      "muscleGroup": "Brain",
+      "muscleGroup": "Brainz",
       "exerciseName": "Building a website",
-      "imgUrl": "https://placebacon.net450/450",
+      "imgUrl": "https://placebacon.net/450/350",
       "routine": "adding a new workout routine to check for image sizes, add workout fields where I changed the default use state to empty strings allowing the placeholders to be seen with run on sentence and stuff and things"
     },
     {
@@ -158,7 +158,23 @@
       "muscleGroup": "distal flanages",
       "exerciseName": "knuckle crack",
       "imgUrl": "https://placebacon.net/450/450",
-      "routine": "checking to see if add workout adds the image url string and dislpays it and stuff"
+      "routine": "checking to see if add workout adds the image url string and dislpays it and stuff maybw"
+    },
+    {
+      "id": "3d83",
+      "day": "Other",
+      "muscleGroup": "toast check",
+      "exerciseName": "bruh press",
+      "imgUrl": "https://placebacon.net/500/500",
+      "routine": "checking to see if toast notification pops up when i add a new workout to the json front end array of stuff and things"
+    },
+    {
+      "id": "a18e",
+      "day": "Other",
+      "muscleGroup": "backend",
+      "exerciseName": "backendRequest",
+      "imgUrl": "https://placebacon.net/150/250",
+      "routine": "testing toast notification on add workout through backendrequest component"
     }
   ]
 }
