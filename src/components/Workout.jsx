@@ -21,11 +21,13 @@ const Workout = ({ workout }) => {
             {/* messing with imgUrl */}
             {/* if a src was a fetch request consider cloudinary */}
             {/* {workout.imgUrl ? <img className='w-[50px] h-[50px]' src={workout.imgUrl} alt='' /> : <img className='w-[50px] h-[50px]' src={defaultImg} /> } */}
-            <img className='w-[50px] h-[50px]' src={workout.imgUrl} alt='' onError={(e) => {
-                e.target.src = defaultImg
+            <img className='w-[50px] h-[50px] object-cover' src={workout.imgUrl} alt='' onError={(e) => {
+                e.target.src =  defaultImg 
             }} />
+            {/* <img className='w-[50px] h-[50px]' src={workout.imgUrl} alt='' onError={(e) => {
+                e.target.src = 'https://placebacon.net/150/150'
+            }} /> */}
             
-    
           </div>
         </div>
         {/* passing in the description variable based on boolean useState hook instead of the workouts.description */}

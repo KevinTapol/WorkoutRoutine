@@ -2,7 +2,7 @@ import React from 'react'
 import dataArray from '../workouts.json'
 import defaultImg from '../assets/images/baconLoader.jpg'
 
-// The purpose of this component is to test how to display a default image after the render and if there is no picture rendered even though there is a path given for each item. 
+// The purpose of this component is to test how to display a default image after the render and if there is no picture rendered even though there is a path given for each item. Instead of e.target.src = defaultImg, you could use a path ie e.target.src = 'https://placebacon.net/50/50'
 const PicRender = () => {
 
   return (
