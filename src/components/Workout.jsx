@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaMapMarker } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import defaultImg from '../assets/images/baconLoader.jpg'
 
 const Workout = ({ workout }) => {
   const [showFullRoutine, setShowFullRoutine] = useState(false);
@@ -19,7 +20,12 @@ const Workout = ({ workout }) => {
           <div>
             {/* messing with imgUrl */}
             {/* if a src was a fetch request consider cloudinary */}
-            <img className='w-[50px] h-[50px]' src={workout.imgUrl} alt="" />
+            {/* {workout.imgUrl ? <img className='w-[50px] h-[50px]' src={workout.imgUrl} alt='' /> : <img className='w-[50px] h-[50px]' src={defaultImg} /> } */}
+            <img className='w-[50px] h-[50px]' src={workout.imgUrl} alt='' onError={(e) => {
+                e.target.src = defaultImg
+            }} />
+            
+    
           </div>
         </div>
         {/* passing in the description variable based on boolean useState hook instead of the workouts.description */}
