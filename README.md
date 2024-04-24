@@ -135,3 +135,11 @@ pages
 added default image to aside instead of company name input fields 4/22
 next thingy
 addworkoutpage successfully loads image but editworkoutpage does not
+
+## Toastify
+npm i react-toastify
+import ToastContainer in MainLayout  
+import { ToastContainer } from 'react-toastify';  
+import 'react-toastify/dist/ReactToastify.css'  
+
+add the component `<ToastContainer />`

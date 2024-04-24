@@ -3,6 +3,7 @@ import Spinner from './Spinner'
 import Workout from './Workout';
 
 import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const workoutLoader = async ({ params }) => {
   const res = await fetch(`/api/workouts/${params.id}`);
@@ -13,6 +14,10 @@ const workoutLoader = async ({ params }) => {
 const TestComponent = ({ isTestPage=true }) => {
   const [workouts, setWorkouts] = useState([]);
   const [loading, setLoading] = useState(true);
+  
+  const checkToast = () => {
+    toast.success('You Clicked the button!')
+  }
 
   const workout = useLoaderData();
 
@@ -39,6 +44,7 @@ const TestComponent = ({ isTestPage=true }) => {
         <h1 className='text-xl'>Bacon Loading...</h1>
         <Spinner />
         <span>This is a test page for random components, routing and other stuff.</span>
+        <button className='btn bg-blue-500 p-2 rounded-full hover:bg-green-500' onClick={checkToast}>check toast</button>
       </div>
 
       {/* <section className='bg-blue-50 px-4 py-10'>
