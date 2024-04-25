@@ -13,13 +13,24 @@ const workoutLoader = async ({ params }) => {
 const WorkoutPage = ({ deleteWorkout }) => {
 
     /*
+    This useState() and useEffect() fetch on render is being replaced by the async data loader function called dataLoader outside of this JobPage function and at the bottom.
+    
+    // useParams hook for specific dynamic job id
+    const { id } = useParams()
+
+    // useState hook for dynamic job
+    const [workout, setWorkout] = useState(null)
+
+    // useState hook for loading state
+    const [loading, setLoading] = useState(true)
+
     instead of useDataLoader()
     useEffect(() => {
         const fetchJob = async () => {
             try {
                 const res = await fetch(`/api/jobs/${id}`)
                 const data = await res.json()
-                setJob(data)
+                setWorkout(data)
             } catch (error) {
                 console.log('Error fetching data', error)
             } finally {

@@ -5,13 +5,13 @@ import Workout from './Workout';
 import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-const workoutLoader = async ({ params }) => {
-  const res = await fetch(`/api/workouts/${params.id}`);
-  const data = await res.json();
-  return data;
-};
+// const workoutLoader = async ({ params }) => {
+//   const res = await fetch(`/api/workouts/${params.id}`);
+//   const data = await res.json();
+//   return data;
+// };
 
-const TestComponent = ({ isTestPage=true }) => {
+const TestComponent = ({ isTestPage = true }) => {
   const [workouts, setWorkouts] = useState([]);
   const [loading, setLoading] = useState(true);
   
@@ -19,7 +19,7 @@ const TestComponent = ({ isTestPage=true }) => {
     toast.success('You Clicked the button!')
   }
 
-  const workout = useLoaderData();
+  // const workout = useLoaderData();
 
   useEffect(() => {
     const fetchWorkouts = async () => {
@@ -44,10 +44,10 @@ const TestComponent = ({ isTestPage=true }) => {
         <h1 className='text-xl'>Bacon Loading...</h1>
         <Spinner />
         <span>This is a test page for random components, routing and other stuff.</span>
-        <button className='btn bg-blue-500 p-2 rounded-full hover:bg-green-500' onClick={checkToast}>check toast</button>
+        <button className='btn bg-blue-500 p-2 rounded-lg text-white b-2 hover:bg-green-500' onClick={checkToast}>check toast</button>
       </div>
 
-      {/* <section className='bg-blue-50 px-4 py-10'>
+      <section className='bg-blue-50 px-4 py-10'>
       <div className='container-xl lg:container m-auto'>
         <h2 className='text-3xl font-bold text-indigo-500 mb-6 text-center'>
           {isTestPage ? 'Recent Workouts' : 'Browse Workouts'}
@@ -62,14 +62,13 @@ const TestComponent = ({ isTestPage=true }) => {
             <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
               {workouts.map((workout) => (
                 <div>
-                <Workout key={workout.id} workout={workout} />
-                <img src="https://placebacon.net/50/50" alt="" />
+                  <Workout key={workout.id} workout={workout} />
                 </ div>            
               ))}
             </div>
         )}
       </div>
-    </section> */}
+    </section>
     </>
   )
 }
