@@ -5,11 +5,11 @@ import Workout from './Workout';
 import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-// const workoutLoader = async ({ params }) => {
-//   const res = await fetch(`/api/workouts/${params.id}`);
-//   const data = await res.json();
-//   return data;
-// };
+const workoutLoader = async ({ params }) => {
+  const res = await fetch(`/api/workouts/${params.id}`);
+  const data = await res.json();
+  return data;
+};
 
 const TestComponent = ({ isTestPage = true }) => {
   const [workouts, setWorkouts] = useState([]);
@@ -19,23 +19,23 @@ const TestComponent = ({ isTestPage = true }) => {
     toast.success('You Clicked the button!')
   }
 
-  // const workout = useLoaderData();
+  const workout = useLoaderData();
 
-  useEffect(() => {
-    const fetchWorkouts = async () => {
-      const apiUrl = isTestPage ? '/api/workouts?_limit=3' : '/api/workouts';
-      try {
-        const res = await fetch(apiUrl);
-        const data = await res.json();
-        setWorkouts(data);
-      } catch (error) {
-        console.log('Error fetching data', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchWorkouts();
-  }, []);
+  // useEffect(() => {
+  //   const fetchWorkouts = async () => {
+  //     const apiUrl = isTestPage ? '/api/workouts?_limit=3' : '/api/workouts';
+  //     try {
+  //       const res = await fetch(apiUrl);
+  //       const data = await res.json();
+  //       setWorkouts(data);
+  //     } catch (error) {
+  //       console.log('Error fetching data', error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+  //   fetchWorkouts();
+  // }, []);
 
   return (
     
